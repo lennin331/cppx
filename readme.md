@@ -1,19 +1,19 @@
-# cppx - compile and execute c++ programs 
+# cppx - compile and execute C++ Programs 
 
-## Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/yourusername/cppx.git
 cd cppx
 ```
-## Make the script executable
+### Make the script executable
 ```bash
 chmod +x cppx
 ```
-## Move to system path (linux)
+### Move to system path (linux)
 ```bash
 sudo mv cppx /usr/local/bin/
 ```
-## Verify Installation
+### Verify Installation
 ```bash
 cppx
 ```
