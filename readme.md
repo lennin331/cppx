@@ -19,4 +19,4 @@ sudo mv cppx /usr/local/bin/
 cppx
 ```
 
-![screenshot](images/screenshot.jpg)
+![screenshot](images/screenshot-2026-05-02_13-32-16.png)
