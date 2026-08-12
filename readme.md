@@ -1,4 +1,4 @@
-# cppx - compile and execute C++ Programs 
+# Compile and Execute C++ Programs 
 
 ### Clone the repository
 ```bash
