@@ -40,7 +40,7 @@ if [ $# -eq 0 ]; then
 fi
 if [ "$1" == "-cp" ]; then
     shift  
-   
+
     if [[ "$1" =~ ^--(11|14|17|20|23|26|c\+\+(11|14|17|20|23|26))$ ]]; then
         CXX_STANDARD=$(parse_standard "$1")
         shift
