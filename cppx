@@ -16,7 +16,7 @@ show_usage() {
     echo "  cppx -cp --17 filename.cpp input.txt       - Use C++17 standard"
     echo "  cppx -cp --20 filename.cpp input.txt       - Use C++20 standard"
     echo "  cppx -cp --23 filename.cpp input.txt       - Use C++23 standard"
-    echo ""
+    echo "  cppx -cp --26 filename.cpp input.txt       - Use C++26 standard"
     echo -e "${BLUE}Note:${NC} Output always goes to output.txt (overwrites existing)"
 }
 get_base_filename() {
@@ -30,6 +30,7 @@ parse_standard() {
         --17|--c++17) echo "17" ;;
         --20|--c++20) echo "20" ;;
         --23|--c++23) echo "23" ;;
+        --26|--c++26) echo "26" ;;
         *) echo "$CXX_STANDARD" ;;
     esac
 }
@@ -40,7 +41,7 @@ fi
 if [ "$1" == "-cp" ]; then
     shift  
    
-    if [[ "$1" =~ ^--(11|14|17|20|23|c\+\+(11|14|17|20|23))$ ]]; then
+    if [[ "$1" =~ ^--(11|14|17|20|23|26|c\+\+(11|14|17|20|23|26))$ ]]; then
         CXX_STANDARD=$(parse_standard "$1")
         shift
     fi
