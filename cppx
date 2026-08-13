@@ -17,6 +17,7 @@ show_usage() {
     echo "  cppx -cp --20 filename.cpp input.txt       - Use C++20 standard"
     echo "  cppx -cp --23 filename.cpp input.txt       - Use C++23 standard"
     echo "  cppx -cp --26 filename.cpp input.txt       - Use C++26 standard"
+	echo ""
     echo -e "${BLUE}Note:${NC} Output always goes to output.txt (overwrites existing)"
 }
 get_base_filename() {
