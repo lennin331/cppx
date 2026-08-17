@@ -80,8 +80,7 @@ if [ "$1" == "-cp" ]; then
     if [ $? -eq 0 ]; then
         echo -e "${GREEN}compilation successful${NC}"
         echo -e "${YELLOW}running - input - '${input_file}'...${NC}"
-        echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-        
+        echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
         
         ./"$executable" < "$input_file" > "$output_file"
         
